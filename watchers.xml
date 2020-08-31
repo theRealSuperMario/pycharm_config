@@ -1,0 +1,74 @@
+<TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="$FilePath$" />
+    <option name="checkSyntaxErrors" value="false" />
+    <option name="description" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="py" />
+    <option name="immediateSync" value="false" />
+    <option name="name" value="Black" />
+    <option name="output" value="$FilePath$" />
+    <option name="outputFilters">
+      <array />
+    </option>
+    <option name="outputFromStdout" value="false" />
+    <option name="program" value="$PyInterpreterDirectory$/bin/black" />
+    <option name="runOnExternalChanges" value="true" />
+    <option name="scopeName" value="Project Files" />
+    <option name="trackOnlyRoot" value="false" />
+    <option name="workingDir" value="$ProjectFileDir$" />
+    <envs />
+  </TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="-m flake8 --max-line-length=88 $FilePath$" />
+    <option name="checkSyntaxErrors" value="false" />
+    <option name="description" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="py" />
+    <option name="immediateSync" value="false" />
+    <option name="name" value="Flake8" />
+    <option name="output" value="" />
+    <option name="outputFilters">
+      <array>
+        <FilterInfo>
+          <option name="description" value="" />
+          <option name="name" value="" />
+          <option name="regExp" value="$FILE_PATH$\:$LINE$\:$COLUMN$\:.*,$FILE_PATH$\:$LINE$\:.*" />
+        </FilterInfo>
+      </array>
+    </option>
+    <option name="outputFromStdout" value="false" />
+    <option name="program" value="$PyInterpreterDirectory$/python" />
+    <option name="runOnExternalChanges" value="true" />
+    <option name="scopeName" value="Project Files" />
+    <option name="trackOnlyRoot" value="false" />
+    <option name="workingDir" value="$ProjectFileDir$" />
+    <envs />
+  </TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="-m bandit --ini, .banditrc, -l, --recursive, src $FilePath$" />
+    <option name="checkSyntaxErrors" value="false" />
+    <option name="description" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="py" />
+    <option name="immediateSync" value="false" />
+    <option name="name" value="Bandit" />
+    <option name="output" value="" />
+    <option name="outputFilters">
+      <array>
+        <FilterInfo>
+          <option name="description" value="" />
+          <option name="name" value="" />
+          <option name="regExp" value="$FILE_PATH$\:$LINE$\:$COLUMN$\:.*,$FILE_PATH$\:$LINE$\:.*" />
+        </FilterInfo>
+      </array>
+    </option>
+    <option name="outputFromStdout" value="false" />
+    <option name="program" value="$PyInterpreterDirectory$/python" />
+    <option name="runOnExternalChanges" value="true" />
+    <option name="scopeName" value="Project Files" />
+    <option name="trackOnlyRoot" value="false" />
+    <option name="workingDir" value="$ProjectFileDir$" />
+    <envs />
+  </TaskOptions>
+</TaskOptions>
